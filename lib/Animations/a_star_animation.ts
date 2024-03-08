@@ -1,5 +1,3 @@
-
-//import { a_star, getShortestPath } from "../Algorithms/a_star";
 import { repeated_a_star,visitedNodez } from "../Algorithms/repeated_a_star";
 import { adaptive_a_star, visitedAdaptive } from "../Algorithms/adaptive_a_star";
 import { backwards_a_star, getShortestPathBackward } from "../Algorithms/backwards_a_star";
