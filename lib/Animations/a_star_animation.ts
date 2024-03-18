@@ -77,9 +77,9 @@ function animateAStar(visitedNodesInOrder: any[], shortestPath: any[]) {
     const finishNode = grid[START_NODE_ROW][START_NODE_COL];
     const startNode = grid[FINISH_NODE_ROW][FINISH_NODE_COL];
     //const visitedNodesInOrder = a_star(grid, startNode, finishNode);
-    const visitedNodesInOrder = backwards_a_star(grid, startNode, finishNode);
-    const shortestPath = getShortestPathBackward(finishNode);
+    const shortestPath = backwards_a_star(grid, startNode, finishNode);
+    //const shortestPath = getShortestPathBackward(finishNode);
     const visitedcells = visitedNodez();
     
-    animateAStar(visitedNodesInOrder,shortestPath);
+    animateAStar(visitedcells,shortestPath);
   }
