@@ -1,6 +1,6 @@
 import { repeated_a_star,visitedNodez } from "../Algorithms/repeated_a_star";
 import { adaptive_a_star, visitedAdaptive } from "../Algorithms/adaptive_a_star";
-import { backwards_a_star, getShortestPathBackward } from "../Algorithms/backwards_a_star";
+import { backwards_a_star, visitedBackwards } from "../Algorithms/backwards_a_star";
 
 let START_NODE_ROW = 7;
 let START_NODE_COL = 3;
@@ -79,7 +79,7 @@ function animateAStar(visitedNodesInOrder: any[], shortestPath: any[]) {
     //const visitedNodesInOrder = a_star(grid, startNode, finishNode);
     const shortestPath = backwards_a_star(grid, startNode, finishNode);
     //const shortestPath = getShortestPathBackward(finishNode);
-    const visitedcells = visitedNodez();
+    const visitedcells = visitedBackwards();
     
     animateAStar(visitedcells,shortestPath);
   }
