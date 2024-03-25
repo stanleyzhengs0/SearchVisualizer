@@ -9,10 +9,10 @@ import { visualizeAStar, visualizeAdaptiveAStar, visualizeBackwardAStar } from '
 
 
 
-let START_NODE_ROW = 7;
-let START_NODE_COL = 3;
-const FINISH_NODE_ROW = 19;
-const FINISH_NODE_COL = 19;
+let START_NODE_ROW = 0;
+let START_NODE_COL = 0;
+const FINISH_NODE_ROW = 9;
+const FINISH_NODE_COL = 9;
 
 
 const PathVisualizer = () => {
@@ -94,9 +94,9 @@ const PathVisualizer = () => {
 
 export const getInitialGrid = () => {
   const grid = [];
-  for (let row = 0; row < 20; row++) {
+  for (let row = 0; row < 10; row++) {
     const currentRow = [];
-    for (let col = 0; col < 20; col++) {
+    for (let col = 0; col < 10; col++) {
 
       const node = createNode(col,row)
       

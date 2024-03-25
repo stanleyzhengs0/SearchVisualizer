@@ -2,10 +2,10 @@ import { repeated_a_star,visitedNodez } from "../Algorithms/repeated_a_star";
 import { adaptive_a_star, visitedAdaptive } from "../Algorithms/adaptive_a_star";
 import { backwards_a_star, visitedBackwards } from "../Algorithms/backwards_a_star";
 
-let START_NODE_ROW = 7;
-let START_NODE_COL = 3;
-const FINISH_NODE_ROW = 19;
-const FINISH_NODE_COL = 19;
+let START_NODE_ROW = 0;
+let START_NODE_COL = 0;
+const FINISH_NODE_ROW = 9;
+const FINISH_NODE_COL = 9;
 
 
 function animateAStar(visitedNodesInOrder: any[], shortestPath: any[]) {
